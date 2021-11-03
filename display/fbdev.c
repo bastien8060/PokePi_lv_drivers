@@ -97,7 +97,7 @@ void fbdev_init(void)
     // Make sure that the display is on.
     if (ioctl(fbfd, FBIOBLANK, FB_BLANK_UNBLANK) != 0) {
         perror("ioctl(FBIOBLANK)");
-        return;
+        //return;
     }
 
 #if USE_BSD_FBDEV
